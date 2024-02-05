@@ -6,12 +6,14 @@ public class ScannerClass {
     private int numero;
     private String nombre;
     private char letra;
+    private Scanner scanner;
 
-    public ScannerClass() {
+    public ScannerClass() {//cuando se crea un objeto de esta clase se crea un scanner
+        scanner = new Scanner(System.in);
     }
 
     public void ScannerNumero() {//metodos publicos //metodo para escanear un numero
-        Scanner scanner = new Scanner(System.in);
+        //scanner = new Scanner(System.in);
         this.numero = scanner.nextInt();
     }
 
@@ -20,7 +22,7 @@ public class ScannerClass {
     }
 
     public void ScannerNombre(){
-        Scanner scanner = new Scanner(System.in);
+        //scanner = new Scanner(System.in);
         this.nombre = scanner.nextLine();
     }
 
@@ -29,11 +31,15 @@ public class ScannerClass {
     }
 
     public void ScannerLetra(){
-        Scanner scanner = new Scanner(System.in);
+        //scanner = new Scanner(System.in);
         this.letra = scanner.next().charAt(0);
     }
 
     public char getLetra(){
         return letra;
+    }
+
+    public Scanner getScanner() {//para retornar scanner para cerrarlo
+        return scanner;
     }
 }
