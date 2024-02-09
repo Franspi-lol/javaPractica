@@ -36,6 +36,7 @@ public class MainArrays {
         //ordenar arreglo
         Arrays.sort(juegos);//Arrays.sort(arreglo) para ordenar el arreglo, God bless java
         
+        
         //iterar el arreglo
         mostrarArreglo(juegos);
 
