@@ -1,6 +1,6 @@
 package com.franco.poo;
 
-public class Persona {
+public abstract class Persona {
     private String nombre;
     private int edad;
     private char sexo;    

@@ -33,6 +33,29 @@ public class MainPoo {
             }
         }
 
+        Hoja hoja2 = new Informe("Contenido del informe", "Título del informe", "Franco");
+        Hoja hoja = new Curriculum("Contenido del curriculum", "Franco", "Ingeniería en Sistemas");
+        ((Curriculum)hoja).agregarExperiencia("Desarrollador Java");
+        ((Curriculum)hoja).agregarExperiencia("Desarrollador Python");
+        imprimirAbs(hoja);
+        SaltoLinea();
+        imprimirAbs(hoja2);
+        SaltoLinea();
+        Libro libro = new Libro("El principito", "Antoine de Saint-Exupéry", "Infantil");
+        Hoja pagina = new Pagina("Contenido de la página 1");
+        Hoja pagina2 = new Pagina("Contenido de la página 2");
+        libro.agregarPagina((Pagina) pagina);
+        libro.agregarPagina((Pagina) pagina2);//castear para usar las funciones de clase hija
+        imprimirAbs(libro);
+        SaltoLinea();
+
+    }
+
+    public static void imprimirAbs(Imprimible hoja) {//polimorfismo con interfaz Imprimible 
+        System.out.println(hoja.imprimir());
+    }
+    public static void SaltoLinea() {
+        System.out.println("-------------------------------------------------");
         
     }
 }
