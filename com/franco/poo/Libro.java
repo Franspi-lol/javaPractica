@@ -6,10 +6,10 @@ public class Libro  implements Imprimible{//libro clase envoltorio
 
     private String titulo;
     private String autor;
-    private String genero;
+    private Genero genero;
     private ArrayList<Pagina> paginas;
 
-    public Libro (String titutlo, String autor, String genero)
+    public Libro (String titutlo, String autor, Genero genero)
     {
         this.titulo=titutlo;
         this.autor=autor;

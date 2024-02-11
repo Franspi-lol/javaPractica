@@ -41,7 +41,7 @@ public class MainPoo {
         SaltoLinea();
         imprimirAbs(hoja2);
         SaltoLinea();
-        Libro libro = new Libro("El principito", "Antoine de Saint-Exupéry", "Infantil");
+        Libro libro = new Libro("El principito", "Antoine de Saint-Exupéry", Genero.NARRATIVA);
         Hoja pagina = new Pagina("Contenido de la página 1");
         Hoja pagina2 = new Pagina("Contenido de la página 2");
         libro.agregarPagina((Pagina) pagina);
