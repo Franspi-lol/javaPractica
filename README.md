@@ -7,3 +7,5 @@
 5. un package para ver el funcionamiento de arreglos
 6. un package para ver como ordenar y otras cosas de arreglos
 7. un package para ver String avanzado
+8. un package para el analisis de la POO y las clases abstractas+interfaces
+9. un package para el analisis de colecciones
