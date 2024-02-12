@@ -1,7 +1,7 @@
 /**
  * Videojuego
  */
-public class Videojuego extends Media{
+public class Videojuego extends Media implements Modeable{
 
     private Plataforma[] plataformas;
     private String desarrollador;
@@ -31,6 +31,10 @@ public class Videojuego extends Media{
     }
     public void setDistribuidor(String distribuidor) {
         this.distribuidor = distribuidor;
+    }
+
+    public String estoyModeado() {
+        return "Estoy modeado";
     }
 
     
