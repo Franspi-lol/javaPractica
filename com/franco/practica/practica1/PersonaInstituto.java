@@ -1,9 +1,9 @@
 package com.franco.practica.practica1;
 
-public abstract class EmpleadoInstituto extends Persona{
+public abstract class PersonaInstituto extends Persona{
     private int legajo;
 
-    public EmpleadoInstituto(String nombre, String apellido, int edad, String dni, int legajo){
+    public PersonaInstituto(String nombre, String apellido, int edad, String dni, int legajo){
         super(nombre, apellido, edad, dni);
         this.legajo = legajo;
     }

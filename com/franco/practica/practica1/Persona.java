@@ -67,6 +67,6 @@ public abstract class Persona {
         this.dni = dni;
     }
 
-    public abstract void mensaje();
+    public abstract String mensaje();
 
 }
